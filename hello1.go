@@ -21,3 +21,15 @@ func RandomHello() string {
 
 	return greetings[rand.Intn(len(greetings))]
 }
+
+func RandomGibberish() string {
+	letters := "abcdefghijklmnopqrstuvwxyz"
+	var gibberish string
+
+	for i := 0; i < 8; i++ {
+		index := rand.Intn(len(letters))
+		gibberish[i] = letters[index]
+	}
+
+	return string(gibberish)
+}
