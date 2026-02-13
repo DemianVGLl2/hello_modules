@@ -7,6 +7,7 @@ This is an example of Go Modules
 Execute the following command:
 
 ````bash
+go mod init test_git
 go get -u github.com/DemianVGLl2/hello_modules
 ````
 
