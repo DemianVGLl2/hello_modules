@@ -24,7 +24,7 @@ func RandomHello() string {
 
 func RandomGibberish() string {
 	letters := "abcdefghijklmnopqrstuvwxyz"
-	var gibberish string
+	gibberish := make([]byte, 8)
 
 	for i := 0; i < 8; i++ {
 		index := rand.Intn(len(letters))
